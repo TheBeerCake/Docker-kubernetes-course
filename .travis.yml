@@ -4,7 +4,7 @@ services:
   - docker
 
 before-install:
-  - docker build -t imageName -f Dockerfile.dev .
+  - docker build -t image-name -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true imageName npm run test
+  - docker run -e CI=true image-name npm run test
